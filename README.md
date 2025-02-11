@@ -24,19 +24,22 @@ Ce projet implémente un modèle de classification pour prédire une maladie (Gr
 ## Prédiction avec le modèle
 Après l'entraînement, vous pouvez charger et utiliser le modèle pour prédire une maladie en fonction des symptômes :
 
+
+## La performance de modele
+
+- **La précision : 89%**
 ```python
-import joblib
-import pandas as pd
+Accuracy: 0.89
+              precision    recall  f1-score   support
 
-# Charger le modèle
-model = joblib.load("model_maladies.pkl")
+    COVID-19       0.82      0.92      0.87        63
+      Grippe       0.92      0.80      0.85        69
+    Rougeole       0.94      0.96      0.95        68
 
-# Exemple de patient avec symptômes
-patient = pd.DataFrame([{ "Âge": 30, "Sexe": 1, "fièvre": 1, "toux": 1, "fatigue": 1, "douleur musculaire": 0, "éruption cutanée": 0, "difficulté respiratoire": 0, "conjonctivite": 0 }])
+    accuracy                           0.89       200
+   macro avg       0.89      0.89      0.89       200
+weighted avg       0.89      0.89      0.89       200
 
-# Prédire la maladie
-prediction = model.predict(patient)
-print("Maladie prédite:", prediction[0])
 ```
 ## Auteur
 Maroua Ourahma  
