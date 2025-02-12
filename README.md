@@ -41,5 +41,8 @@ Accuracy: 0.89
 weighted avg       0.89      0.89      0.89       200
 
 ```
-
+## Auteur 
+- Maroua Ourahma.
+    - Email : marouaourahma@gmail.com  
+    - LinkedIn : [linkedin.com/in/ourahma](www.linkedin.com/in/maroua-ourahma-293426235)
 
